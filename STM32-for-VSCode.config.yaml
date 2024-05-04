@@ -1,3 +1,6 @@
 customMakefileRules:
-  - command: formatt
-    rule: clang-format -style=file -i Core/Inc/*.h && clang-format -style=file -i Core/Src/*.c
+- command: format
+  rule: clang-format -style=file -i Core/Inc/*.h && clang-format -style=file -i Core/Src/*.c
+
+makeFlags:
+  - format
